@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Security.Cryptography.X509Certificates;
 
 namespace CollectionsMasterConsoleUI
 {
@@ -13,10 +15,20 @@ namespace CollectionsMasterConsoleUI
 
             #region Arrays
             //TODO: Create an integer Array of size 50
-            
+            int[] numbers = new int[50] { };
 
             //TODO: Create a method to populate the number array with 50 random numbers that are between 0 and 50
-            
+            static void ArrayPopulate(Random random, int[] numbers)
+            {
+                foreach (var num in numbers)
+                {
+
+                    int rand = random.Next(0, 50);
+                    
+
+                }
+                
+            }
 
             //TODO: Print the first number of the array
 
